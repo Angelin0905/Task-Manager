@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffdce5, #fff0f5, #fdf6e3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main card */
+.container {
+    width: 450px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #f7c6d9;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0px 8px 25px rgba(200, 120, 150, 0.3);
+    text-align: center;
+}
+
+/* Header */
+.header h1 {
+    color: #c94f7c;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #8d5c6f;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Input section */
+.input-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #f4b6c2;
+    border-radius: 12px;
+    outline: none;
+    background: #fffafc;
+    font-size: 15px;
+}
+
+/* Add button */
+#addBtn {
+    padding: 12px 18px;
+    background: #d86f94;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#addBtn:hover {
+    background: #bf5b80;
+    transform: scale(1.05);
+}
+
+/* Task counter */
+#taskCount {
+    margin-bottom: 15px;
+    color: #b35c7a;
+    font-weight: bold;
+}
+
+/* Task list */
+#taskList {
+    list-style: none;
+}
+
+/* Task card */
+li {
+    background: #fff8fb;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 15px;
+    border-left: 5px solid #e89ab5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Buttons alignment */
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* Buttons */
+.task-buttons button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #9acb7a;
+    color: white;
+}
+
+.delete-btn {
+    background: #f28ca7;
+    color: white;
+}
+
+/* Completed task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Empty message */
+#emptyMsg {
+    margin-top: 15px;
+    color: #b87d94;
+    font-style: italic;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
